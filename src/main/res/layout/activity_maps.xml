@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/disp_img2"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fev"
+        map:civ_border_color="@color/gray"
+        map:civ_border_width="3dp"
+        map:layout_constraintDimensionRatio="h,1:1"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hello,"
+        android:textSize="24sp"
+        map:layout_constraintStart_toStartOf="@+id/disp_img2"
+        map:layout_constraintTop_toBottomOf="@+id/disp_img2" />
+
+    <TextView
+        android:id="@+id/user_name_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="---!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        map:layout_constraintBottom_toBottomOf="@+id/textView"
+        map:layout_constraintStart_toEndOf="@+id/textView"
+        map:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/sett2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        map:layout_constraintBottom_toBottomOf="@+id/disp_img2"
+        map:layout_constraintDimensionRatio="h,1:1"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/disp_img2"
+        tools:srcCompat="@drawable/ic_clear_black_24dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundtext"
+        android:ems="8"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="74.8196"
+        android:textAlignment="center"
+        map:layout_constraintBottom_toBottomOf="@+id/textView2"
+        map:layout_constraintEnd_toEndOf="@+id/editText5"
+        map:layout_constraintStart_toStartOf="@+id/editText2"
+        map:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundtext"
+        android:ems="8"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="343"
+        android:textAlignment="center"
+        map:layout_constraintBottom_toBottomOf="@+id/button"
+        map:layout_constraintStart_toEndOf="@+id/textView4"
+        map:layout_constraintTop_toTopOf="@+id/button" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="8dp"
+        map:layout_constraintDimensionRatio="w,1:1"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonround"
+        android:text="Emergency Mode"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.95"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonround"
+        android:text="Add Traffic signal"
+        map:layout_constraintBottom_toBottomOf="@+id/editText3"
+        map:layout_constraintEnd_toEndOf="@+id/button"
+        map:layout_constraintStart_toStartOf="@+id/button"
+        map:layout_constraintTop_toTopOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundtext"
+        android:ems="8"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="34.1503"
+        android:textAlignment="center"
+        map:layout_constraintBottom_toBottomOf="@+id/textView7"
+        map:layout_constraintEnd_toEndOf="@+id/editText5"
+        map:layout_constraintStart_toEndOf="@+id/textView4"
+        map:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="lon"
+        map:layout_constraintStart_toStartOf="@+id/textView7"
+        map:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="lat"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Bus num"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/editText5" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

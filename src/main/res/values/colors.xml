@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0180FE</color>
+    <color name="colorPrimaryDark">#0180FE</color>
+    <color name="colorAccent">#0180FE</color>
+    <color name="PURPLE">#6E78F7</color>
+    <color name="PURPLE_BLACK">#313450</color>
+    <color name="WARM_GRAY">#898A8F</color>
+    <color name="GRAY">#94A5A6</color>
+    <color name="LIGHT_GRAY">#FFDFDFDF</color>
+    <color name="interdumentional_portal">#3C3E3F</color>
+    <color name="scuba_blue">#00A9B9</color>
+    <color name="midnight_hour">#3C494F</color>
+    <color name="chimney_sweep">#263137</color>
+    <color name="carabian_sea">#008099</color>
+    <color name="bondi_blue">#0095b3</color>
+    <color name="van_de_cane">#faf6ed</color>
+    <color name="yello_green">#99cc33</color>
+    <color name="apple_green">#8ab312</color>
+    <color name="spray">#84eded</color>
+    <color name="chaelotte">#bbfaf0</color>
+    <color name="clear_day">#f3fffc</color>
+    <color name="shakespears">#65B6D6</color>
+    <color name="san_mario">#4365b3</color>
+    <color name="crusta">#fc7634</color>
+    <color name="fuel_yellow">#f2ac34</color>
+    <color name="eucalyptus">#0180FE</color>
+    <color name="conifier">#b2db34</color>
+    <color name="gray">#D1D1D1</color>
+    <color name="gray_LIGHT">#EBEBEB</color>
+    <color name="old_copper">#73503f</color>
+    <color name="BROWN">#FFFFFF</color>
+    <color name="WHITE">#FFFF</color>
+    <color name="purple_l">#BDB6FD</color>
+    <color name="blue">#0180FE</color>
+    <color name="yellow_l">#FDD791</color>
+
+</resources>
